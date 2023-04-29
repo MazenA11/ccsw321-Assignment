@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: Black;
+    --text-color: gray;
+}
+
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: fira sans, inter;
+    background-color: white;
+    color: black;
+}
+
+/*recurrent Styles */
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black
+}
+
+.description {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.title {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.item_preTitle {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 200;
+}
+
+.item_title {
+    color: var(--main-color);
+    font-size: 1.7rem;
+    font-weight: 500;
+
+}
+
+.item_subtitle {
+
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 200;
+
+}
+
+/*LAYOUTS*/
+.Box {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: whitesmoke;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .Box {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+
+.Profile {
+    grid-column: 1/-1;
+    margin-bottom: 2rem;
+}
+.bottom_C {
+    max-width: 700px;
+    width: 100%;
+    margin: 0;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.bottom_C>div {
+    flex: 1;
+}
+.left_C,
+.right_C {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+/*Profile*/
+.P_Box {
+    display: flex;
+    gap: 2rem;
+}
+
+.P_Img {
+    max-width: 200px;
+}
+
+.P_First_Name {
+    color: var(--main-color);
+    font-weight: 250;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.P_Last_Name {
+    color: var(--main-color);
+    font-weight: 600;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform: capitalize;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.P_title {
+    color: var(--main-color);
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.download_CV {
+    display: block;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: black;
+}
+
+.download_CV:hover {
+    color: blue
+}
+
+@media only screen and (max-width: 768px) {
+    .P_Box {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .P_Box {
+        flex-direction: column;
+    }
+}
+
+/*certificates*/
+.title {
+    margin-bottom: 2rem;
+}
+
+.item_preTitle {
+    margin-top: 1rem;
+}
+
+/*education*/
+.title {
+    margin-top: 2rem;
+}
+
+.edu_item {
+    color: var(--main-color);
+    margin-top: 2rem;
+}
+
+/*objectives*/
+.objectives_List {
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/*Projects*/
+
+.item_title {
+    font-weight: 570;
+}
+
+.description {
+    margin-bottom: 1rem;
+}
+
+/*interests*/
+.interests_items {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.interests_item {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--main-color);
+}
+
+.interests_item svg {
+    width: 2rem;
+}
