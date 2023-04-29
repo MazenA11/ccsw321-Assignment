@@ -148,7 +148,7 @@ a {
     text-transform: capitalize;
 }
 
-.download_CV {
+.Download {
     display: block;
     text-decoration: underline;
     font-size: 2rem;
@@ -156,7 +156,7 @@ a {
     color: black;
 }
 
-.download_CV:hover {
+.Download:hover {
     color: blue
 }
 
